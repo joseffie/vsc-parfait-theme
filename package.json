@@ -2,7 +2,7 @@
   "name": "parfait-theme",
   "displayName": "Parfait Theme",
   "description": "The parfait dark theme.",
-  "publisher": "Ivan Gavrilich (joseffie)",
+  "publisher": "joseffie",
   "license": "MIT",
   "version": "1.0.0",
   "engines": {
@@ -12,6 +12,7 @@
     "dev": "npx vite-node src/index.ts --watch",
     "build": "npx vite-node src/index.ts",
     "build:ext": "npx vsce package --no-yarn",
+    "publish": "npx vsce publish --no-yarn",
     "fix": "npx prettier --write ./src/**/*.ts"
   },
   "repository": {
