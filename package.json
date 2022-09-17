@@ -1,0 +1,48 @@
+{
+  "name": "parfait-theme",
+  "displayName": "Parfait Theme",
+  "description": "The parfait dark theme.",
+  "publisher": "Ivan Gavrilich (joseffie)",
+  "license": "MIT",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.69.0"
+  },
+  "scripts": {
+    "dev": "npx vite-node src/index.ts --watch",
+    "build": "npx vite-node src/index.ts",
+    "build:ext": "npx vsce package --no-yarn",
+    "fix": "npx prettier --write ./src/**/*.ts"
+  },
+  "keywords": [
+    "parfait",
+    "theme",
+    "dark"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "icon": "assets/icon.jpg",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Parfait Classic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/parfait-theme-classic.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "@types/node": "^18.7.18",
+    "ovsx": "^0.5.1",
+    "typescript": "^4.8.3",
+    "vite-node": "^0.23.2",
+    "vsce": "^2.11.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "prettier": "^2.7.1"
+  }
+}

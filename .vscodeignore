@@ -1,0 +1,9 @@
+src/**
+.gitignore
+.yarnrc
+yarn.lock
+vsc-extension-quickstart.md
+**/.eslintrc.json
+**/*.map
+save/**
+node_modules
